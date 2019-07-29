@@ -6,16 +6,16 @@ void main(void)
 {
 	unsigned char i;
 
-	OLED_Init(); //OLEDЁУй╪╩╞
-	for(;;)								//╣╔рЁцФ  while ╩Ар╩ж╠к╒  for╡╩╩А
+	OLED_Init(); //OLEDЕ┬²Е╖▀Е▄√
+	for(;;)								//Е█∙И║╣И²╒  while Д╪ Д╦─Г⌡╢Е┬╥  forД╦█Д╪ 
 	{
-		OLED_Fill(0xff); //фах╚аа
+		OLED_Fill(0xff); //Е╠▐Е┘╗Д╨╝
 		delay(2000);
-		OLED_Fill(0x00); //фах╚цП
+		OLED_Fill(0x00); //Е╠▐Е┘╗Г│╜
 		delay(200);
 
-		Draw_BMP(0,0,128,8,BMP2);									///////////*╣зкдрЁ*////////
+		Draw_BMP(0,0,128,8,BMP2);						
 		delay(8000);
-//			OLED_CLS();//гЕфа
+//			OLED_CLS();//Ф╦┘Е╠▐
 	}
 }
